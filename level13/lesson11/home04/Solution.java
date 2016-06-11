@@ -20,8 +20,8 @@ public class Solution
         while (true)
         {
             String text = reader.readLine();
-            if (text.equals("exit")) {writer.flush(); break;}
             writer.write(text);
+            if (text.equals("exit")) {writer.flush(); break;}
             writer.append('\n');
             writer.flush();
         }
